@@ -9,12 +9,13 @@
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 header h1 {
     text-align: center;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 header nav ul {  /* More specificity here */

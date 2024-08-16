@@ -4,14 +4,82 @@ body {
     color: #333;
 }
 
-section {
+#login {
     margin: 20px;
-    padding: 10px;
+    /*padding: 10px;*/
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#latest-news {
+    margin: 20px;
+    /*padding: 10px;*/
     background-color: white;
     border-radius: 5px;
 }
 
+#upcoming-events {
+    margin: 20px;
+    /*padding: 10px;*/
+    background-color: white;
+    border-radius: 5px;
+}
+
+#section-elements {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+div {
+    display: flex;
+}
+
+section {
+    flex: 1;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }

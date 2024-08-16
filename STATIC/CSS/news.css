@@ -21,3 +21,11 @@ article h3 {
 article p {
     font-size: 1.1em;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <h1>Shinobis Association - Competitions</h1>
+        <h1>Shinobis Association - Home</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html"><u>Home</u></a></li>
                 <li><a href="ninja_list.html">Ninja List</a></li>
                 <li><a href="rankings.html">Rankings</a></li>
                 <li><a href="news.html">News</a></li>
@@ -23,35 +23,37 @@
         </nav>
     </header>
 
-    <section id="latest-news">
-        <h2>Latest News</h2>
-        <article>
-            <h3>New Season Begins!</h3>
-            <p>The latest season of the Shinobi competition is starting soon! Stay tuned for updates.</p>
-        </article>
-    </section>
-
-    <section id="upcoming-events">
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li>Chuunin Exam - Quarterfinals (August 20th)</li>
-            <li>Jounin Invitational (September 10th)</li>
-        </ul>
-    </section>
-
     <section id="login">
-        <h2>Member Login</h2>
-        <form action="/login" method="post">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
+        <h2 id="section-elements">Member Login</h2>
+        <form id="section-elements" action="/login" method="post">
+            <label for="username">Username : </label>
+            <input type="text" placeholder="Username" id="username" name="username"> <br> <br>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Password" id="password" name="password"> <br> <br>
             <button type="submit">Login</button>
         </form>
     </section>
 
+    <div>
+        <section id="latest-news">
+            <h2 id="section-elements">Latest News</h2>
+            <article>
+                <h3 id="section-elements">New Season Begins!</h3>
+                <p id="section-elements">The latest season of the Shinobi competition is starting soon! Stay tuned for updates.</p>
+            </article>
+        </section>
+
+        <section id="upcoming-events">
+            <h2 id="section-elements">Upcoming Events</h2>
+            <ul>
+                <li id="section-elements">Chuunin Exam - Quarterfinals (August 20th)</li>
+                <li id="section-elements">Jounin Invitational (September 10th)</li>
+            </ul>
+        </section>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Shinobis Association</p>
+        <p">&copy; 2024 Shinobis Association</p>
     </footer>
     <script src="/static/js/index.js"></script>
 </body>

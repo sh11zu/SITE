@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings</title>
+    <link rel="stylesheet" href="/static/css/rankings.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+</head>
+<body>
+    <header>
+        <h1>Shinobis Association - Rankings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ninja_list.html">Ninja List</a></li>
+                <li><a href="rankings.html">Rankings</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="competitions.html">Competitions</a></li>
+                <li><a href="member_space.html">Member Space</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="rankings">
+        <h2>Rankings</h2>
+        <p>Toggle between different rankings:</p>
+        <button id="toggle-ninja">Ninjas</button>
+        <button id="toggle-team">Teams</button>
+        <button id="toggle-region">Regions</button>
+
+        <div id="ranking-tables">
+            <!-- Ninja Rankings -->
+            <table id="ninja-rankings" class="ranking-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Shinobi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ninja List -->
+                    <!-- <tr><td>1</td><td>3rd Raikage</td></tr>
+                    <tr><td>2</td><td>Danzô Shimura</td></tr>
+                    <tr><td>3</td><td>Gaï Maïto</td></tr>
+                    <tr><td>4</td><td>Jiraya</td></tr>
+                    <tr><td>5</td><td>Yamato</td></tr>
+                    <tr><td>6</td><td>Han</td></tr>
+                    <tr><td>7</td><td>Itachi Uchiwa</td></tr>
+                    <tr><td>8</td><td>Minato Namikaze</td></tr>
+                    <tr><td>9</td><td>Kushina Uzumaki</td></tr>
+                    <tr><td>10</td><td>Kakuzu</td></tr>
+                    <tr><td>11</td><td>Hanzô</td></tr>
+                    <tr><td>12</td><td>Hiruzen Sarutobi</td></tr>
+                    <tr><td>13</td><td>Chôji Akimichi</td></tr>
+                    <tr><td>14</td><td>Nagato Uzumaki</td></tr>
+                    <tr><td>15</td><td>Karin</td></tr>
+                    <tr><td>16</td><td>Rock Lee</td></tr>
+                    <tr><td>17</td><td>Neji Hyûga</td></tr>
+                    <tr><td>18</td><td>Haku</td></tr>
+                    <tr><td>19</td><td>Tobi</td></tr>
+                    <tr><td>20</td><td>Boruto Uzumaki</td></tr>
+                    <tr><td>21</td><td>Shisui Uchiwa</td></tr>
+                    <tr><td>22</td><td>Jûgo</td></tr>
+                    <tr><td>23</td><td>Fû</td></tr>
+                    <tr><td>24</td><td>Rôshi</td></tr>
+                    <tr><td>25</td><td>Rin Nohara</td></tr>
+                    <tr><td>26</td><td>Tsunade</td></tr>
+                    <tr><td>27</td><td>Gaara</td></tr>
+                    <tr><td>28</td><td>A</td></tr>
+                    <tr><td>29</td><td>Konan</td></tr>
+                    <tr><td>30</td><td>Hashirama Senjû</td></tr>
+                    <tr><td>31</td><td>Shikamaru Nara</td></tr>
+                    <tr><td>32</td><td>Zabuza Momochi</td></tr>
+                    <tr><td>33</td><td>Kinshiki Ôtsutsuki</td></tr>
+                    <tr><td>34</td><td>Konohamaru Sarutobi</td></tr>
+                    <tr><td>35</td><td>Kakashi Hatake</td></tr>
+                    <tr><td>36</td><td>Mû</td></tr>
+                    <tr><td>37</td><td>Onoki</td></tr>
+                    <tr><td>38</td><td>Hidan</td></tr>
+                    <tr><td>39</td><td>Tobirama Senjû</td></tr>
+                    <tr><td>40</td><td>Ino Yamanaka</td></tr>
+                    <tr><td>41</td><td>Yugito Nii</td></tr>
+                    <tr><td>42</td><td>Sakura Haruno</td></tr>
+                    <tr><td>43</td><td>Kabuto Yakushi</td></tr>
+                    <tr><td>44</td><td>Kimimaro</td></tr>
+                    <tr><td>45</td><td>Rasa</td></tr>
+                    <tr><td>46</td><td>Pain</td></tr>
+                    <tr><td>47</td><td>Homme Masqué</td></tr>
+                    <tr><td>48</td><td>Madara Uchiwa</td></tr>
+                    <tr><td>49</td><td>Suigetsu Hôzuki</td></tr>
+                    <tr><td>50</td><td>Hinata Hyûga</td></tr>
+                    <tr><td>51</td><td>Mei Terumi</td></tr>
+                    <tr><td>52</td><td>Asuma Sarutobi</td></tr>
+                    <tr><td>53</td><td>Iruka Umino</td></tr>
+                    <tr><td>54</td><td>Jirôbô</td></tr>
+                    <tr><td>55</td><td>Sarada Uchiwa</td></tr>
+                    <tr><td>56</td><td>Orochimaru</td></tr>
+                    <tr><td>57</td><td>Kisame Hoshigaki</td></tr>
+                    <tr><td>58</td><td>Naruto Uzumaki</td></tr>
+                    <tr><td>59</td><td>Momoshiki Ôtsutsuki</td></tr>
+                    <tr><td>60</td><td>Temari</td></tr>
+                    <tr><td>61</td><td>Mifune</td></tr>
+                    <tr><td>62</td><td>Killer Bee</td></tr>
+                    <tr><td>63</td><td>Darui</td></tr>
+                    <tr><td>64</td><td>Tenten</td></tr>
+                    <tr><td>65</td><td>Yagura</td></tr>
+                    <tr><td>66</td><td>Gengetsu Hôzuki</td></tr>
+                    <tr><td>67</td><td>Sasuke Uchiwa</td></tr>
+                    <tr><td>68</td><td>Saï</td></tr>
+                    <tr><td>69</td><td>Sakon & Ukon</td></tr>
+                    <tr><td>70</td><td>Deidara</td></tr>
+                    <tr><td>71</td><td>Obito Uchiwa</td></tr>
+                    <tr><td>72</td><td>Kiba Inuzuka</td></tr>
+                    <tr><td>73</td><td>Chiyo</td></tr>
+                    <tr><td>74</td><td>Mecha Naruto</td></tr>
+                    <tr><td>75</td><td>Mitsuki</td></tr>
+                    <tr><td>76</td><td>Utakata</td></tr>
+                    <tr><td>77</td><td>Hanabi Hyûga</td></tr>
+                    <tr><td>78</td><td>Kankurô</td></tr>
+                    <tr><td>79</td><td>Kidomaru</td></tr>
+                    <tr><td>80</td><td>Shino Aburame</td></tr>
+                    <tr><td>81</td><td>Kaguya Ôtsutsuki</td></tr>
+                    <tr><td>82</td><td>Tayuya</td></tr>
+                    <tr><td>83</td><td>Sasori</td></tr>
+                    <tr><td>84</td><td>Jigen</td></tr>
+                    <tr><td>85</td><td>Kawaki</td></tr>
+                    <tr><td>86</td><td>Boro</td></tr>
+                    <tr><td>87</td><td>Delta</td></tr>
+                    <tr><td>88</td><td>Kashin Koji</td></tr>
+                    <tr><td>89</td><td>Ashura Ôtsutsuki</td></tr>
+                    <tr><td>90</td><td>Indra Ôtsutsuki</td></tr> -->
+                </tbody>
+            </table>
+
+            <!-- Team Rankings -->
+            <table id="team-rankings" class="ranking-table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Team</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Team List -->
+                    <tr><td>1</td><td>AMEGAKURE</td></tr>
+                    <tr><td>2</td><td>EXO ROGUE</td></tr>
+                    <tr><td>3</td><td>GENERATION Z</td></tr>
+                    <tr><td>4</td><td>GHOSTS OF UCHIWA</td></tr>
+                    <tr><td>5</td><td>HAWKS</td></tr>
+                    <tr><td>6</td><td>HOKAGE</td></tr>
+                    <tr><td>7</td><td>INO SHIKA CHO</td></tr>
+                    <tr><td>8</td><td>JINCHURIKI</td></tr>
+                    <tr><td>9</td><td>KARA</td></tr>
+                    <tr><td>10</td><td>KONOHA 8</td></tr>
+                    <tr><td>11</td><td>LEAF GIRLS</td></tr>
+                    <tr><td>12</td><td>LEGENDARY</td></tr>
+                    <tr><td>13</td><td>MIGHT TEAM</td></tr>
+                    <tr><td>14</td><td>MIST DEMONS</td></tr>
+                    <tr><td>15</td><td>MIZUKAGE</td></tr>
+                    <tr><td>16</td><td>NEOSANNIN</td></tr>
+                    <tr><td>17</td><td>ÔTSUTSUKI CLAN</td></tr>
+                    <tr><td>18</td><td>ROOT</td></tr>
+                    <tr><td>19</td><td>SAND SIBLINGS</td></tr>
+                    <tr><td>20</td><td>SENSEI</td></tr>
+                    <tr><td>21</td><td>SOUND QUARTET</td></tr>
+                    <tr><td>22</td><td>STONE SENPAI</td></tr>
+                    <tr><td>23</td><td>THUNDERSTORM</td></tr>
+                    <tr><td>24</td><td>ZOMBIES</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Region Rankings -->
+            <table id="region-rankings" class="ranking-table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Region</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Region List -->
+                    <tr><td>1</td><td>EARTH</td></tr>
+                    <tr><td>2</td><td>FIRE</td></tr>
+                    <tr><td>3</td><td>WATER</td></tr>
+                    <tr><td>4</td><td>WIND</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shinobis Association</p>
+    </footer>
+
+    <script src="/static/js/rankings.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    font-size: 1.1em;
+}

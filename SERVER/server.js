@@ -6,8 +6,6 @@ const path = require('path');  // Importer le module path pour gérer les chemin
 const app = express();
 const port = 3003;
 
-const cors = require('cors');
-
 // Autoriser spécifiquement l'origine de Live Server
 app.use(cors({
   origin: 'http://127.0.0.1:5500'

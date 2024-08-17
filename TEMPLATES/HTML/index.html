@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shinobis Association - Home</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+    <!--?php
+    $user = "root";
+    $pass = "";
+
+    try {
+        $db = new PDO ("mysql:host=127.0.0.1;dbname=shinobi", $user, $pass);
+        foreach ($db->query("SELECT * FROM membres") as $row) {
+            print_r($row);
+        }
+    }
+    catch (PDOException $e) {
+        print "Erreur :" . $e->getMessage() . "<br/>";
+        die;
+    }
+    ?-->
 
 </head>
 <body>
     <header>
-        <h1>Shinobis Association</h1>
+        <h1>Association Shinobis</h1>
         <nav>
             <button><a class="navig" href="index.html"><b>Accueil</b></a></button>
             <button><a class="navig" class="navig" href="ninja_list.html">Ninjas</a></button>
@@ -25,11 +43,11 @@
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
             <section id="login">
-                <h2 id="section-elements">Login</h2>
+                <h2 id="section-elements">Connexion</h2>
                 <form id="section-elements" action="/login" method="post">
-                    <input type="text" placeholder="Username" id="username" name="username"> <br> <br>
-                    <input type="password" placeholder="Password" id="password" name="password"> <br> <br>
-                    <button type="submit">Login</button>
+                    <input type="text" placeholder="Identifiant" id="username" name="username"> <br> <br>
+                    <input type="password" placeholder="Mot de Passe" id="password" name="password"> <br> <br>
+                    <button type="submit">Connexion</button>
                 </form>
             </section-->
         </div>
@@ -37,24 +55,24 @@
 
     <div>
         <section id="latest-news">
-            <h2 id="section-elements">Latest News</h2>
+            <h2 id="section-elements">Dernières Actualités</h2>
             <article>
-                <h3 id="section-elements">New Season Begins!</h3>
-                <p id="section-elements">The latest season of the Shinobi competition is starting soon! Stay tuned for updates.</p>
+                <h3 id="section-elements">La Nouvelle Saison Commence !</h3>
+                <p id="section-elements">La toute dernière saison de la compétition Shinobi commencera bientôt ! <br> Restez bien à l'écoute pour recevoir les mises à jour.</p>
             </article>
         </section>
 
         <section id="upcoming-events">
-            <h2 id="section-elements">Upcoming Events</h2>
+            <h2 id="section-elements">Évènements à Venir</h2>
             <ul>
-                <li id="section-elements">Chuunin Exam - Quarterfinals (August 20th)</li>
-                <li id="section-elements">Jounin Invitational (September 10th)</li>
+                <li id="section-elements">Examen Chuunin - Quarts de finale (Le 20 Août)</li>
+                <li id="section-elements">Invitation Jounin(Le 10 Septembre)</li>
             </ul>
         </section>
     </div>
 
     <footer>
-        <p">&copy; 2024 Shinobis Association</p>
+        <p">&copy; Association Shinobis 2024</p>
     </footer>
     <script src="/static/js/index.js"></script>
 </body>

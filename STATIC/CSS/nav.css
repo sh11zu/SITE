@@ -1,5 +1,6 @@
 /* CSS Reset */
 * {
+    font-family: 'Permanent Marker', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,6 +45,10 @@ header nav ul li a:hover {
 .navig {
     color: white;
     text-decoration: none;
+}
+
+.navig:hover {
+    text-decoration: underline;
 }
 
 header nav {

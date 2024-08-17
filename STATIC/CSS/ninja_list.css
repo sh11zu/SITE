@@ -5,7 +5,9 @@ body {
 
 table {
     width: 100%;
-    margin: 20px 0;
+    /*margin: 10px;*/
+    /*margin-left: 10px;
+    margin-right: 10px;*/
     border-collapse: collapse;
 }
 
@@ -45,4 +47,9 @@ button {
 button:hover {
     background-color: #333;
     color: white;
+}
+
+h2 {
+    font-size: large;
+    padding: 5px;
 }

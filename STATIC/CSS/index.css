@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    /*font-family: Arial, sans-serif;*/
     background-color: #f4f4f4;
     color: #333;
 }
@@ -13,6 +14,8 @@ body {
 }
 
 #latest-news {
+    /*padding: 10px;*/
+    border: 1px solid #ccc;
     margin: 20px;
     /*padding: 10px;*/
     background-color: white;
@@ -20,6 +23,7 @@ body {
 }
 
 #upcoming-events {
+    border: 1px solid #ccc;
     margin: 20px;
     /*padding: 10px;*/
     background-color: white;

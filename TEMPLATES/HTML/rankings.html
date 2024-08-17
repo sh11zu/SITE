@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rankings</title>
+    <title>Classements</title>
     <link rel="stylesheet" href="/static/css/rankings.css">
     <link rel="stylesheet" href="/static/css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Shinobis Association</h1>
+        <h1>Association Shinobis</h1>
         <nav>
             <button><a class="navig" href="index.html">Accueil</a></button>
             <button><a class="navig" class="navig" href="ninja_list.html">Ninjas</a></button>
@@ -21,19 +22,26 @@
     </header>
 
     <section id="rankings">
-        <h2>Rankings</h2>
-        <p>Toggle between different rankings:</p>
+        <h2>Classements</h2>
+        <p>Basculer entre les différents classements :</p> <br>
         <button id="toggle-ninja">Ninjas</button>
-        <button id="toggle-team">Teams</button>
-        <button id="toggle-region">Regions</button>
+        <button id="toggle-team">Équipes</button>
+        <button id="toggle-region">Régions</button>
 
         <div id="ranking-tables">
             <!-- Ninja Rankings -->
             <table id="ninja-rankings" class="ranking-table">
                 <thead>
                     <tr>
-                        <th>Rank</th>
+                        <th>Rang</th>
                         <th>Shinobi</th>
+                        <th>Ninja</th>
+                        <th>Niveau</th>
+                        <th>Point 1</th>
+                        <th>Point 2</th>
+                        <th>Point 3</th>
+                        <th>Point 4</th>
+                        <th>Pourcentage</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -135,8 +143,13 @@
             <table id="team-rankings" class="ranking-table" style="display:none;">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Team</th>
+                        <th>Rang</th>
+                        <th>Équipe</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>%</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -172,8 +185,13 @@
             <table id="region-rankings" class="ranking-table" style="display:none;">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Region</th>
+                        <th>Rang</th>
+                        <th>Région</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>%</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -188,7 +206,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Shinobis Association</p>
+        <p>&copy; Association Shinobis 2024</p>
     </footer>
 
     <script src="/static/js/rankings.js"></script>

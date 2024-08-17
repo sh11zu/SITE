@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    
 }
 
 section {
@@ -12,6 +13,7 @@ section {
 
 article {
     margin-bottom: 20px;
+    
 }
 
 article h3 {
@@ -44,4 +46,8 @@ button {
 button:hover {
     background-color: #333;
     color: white;
+}
+
+#news-section {
+    border-radius: 5px;
 }

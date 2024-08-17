@@ -40,3 +40,26 @@ header nav ul li a { /* More specificity here */
 header nav ul li a:hover {
     color: #ddd;
 }
+
+.navig {
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    text-align: center;
+}
+
+.connexion {
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.connexion:hover {
+    background-color: white;
+    color: black;
+}

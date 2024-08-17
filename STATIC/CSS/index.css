@@ -76,20 +76,6 @@ button:hover {
     color: white;
 }
 
-.connexion {
-    color: white;
-    border: 2px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 10px;
-}
-
-.connexion:hover {
-    background-color: white;
-    color: black;
-}
-
 .modal {
     display: none; /* Caché par défaut */
     position: fixed; /* Reste fixe lors du défilement */
@@ -125,10 +111,6 @@ button:hover {
 }
 
 .close:hover {
-    color: black;
-}
-
-#onglets:hover {
     color: black;
 }
 

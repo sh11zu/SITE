@@ -6,6 +6,7 @@
     <title>Ninjas</title>
     <link rel="stylesheet" href="/static/css/ninja_list.css">
     <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 </head>
@@ -24,7 +25,7 @@
 
     <section id="ninja-list">
         <h2>Les Ninjas</h2>
-        <table id="ninja-table">
+        <table id="ninja-table" class="display">
             <thead>
                 <tr>
                     <th>Matricule</th>
@@ -44,29 +45,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>12345</td>
-                    <td>Konoha</td>
-                    <td>FIRE</td>
-                    <td>Team 7</td>
-                    <td>Naruto Uzumaki</td>
-                    <td>Hokage</td>
-                    <td>A</td>
-                    <td>500</td>
-                    <td>50</td>
-                    <td>45</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>90%</td>
-                    <td>2000</td>
-                </tr>
+                <!-- Les lignes de données seront insérées ici -->
             </tbody>
         </table>
+        
     </section>
 
     <footer>
         <p>&copy; Association Shinobis 2024</p>
     </footer>
     <script src="/static/js/ninja_list.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
 </body>
 </html>
